@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "serverstop",
+  "version": "${version}",
+
+  "name": "Server Stop",
+  "description": "Stops the server automatically at 6am.",
+  "authors": [
+    "Jorbonism"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/serverstop/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "edu.jorbonism.server_stop.ServerStop"
+    ]
+  },
+  "mixins": [
+    "serverstop.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13",
+    "fabric": "*",
+    "minecraft": ">=1.19.1"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
